@@ -14,9 +14,10 @@ test('from dollar to yen', () => {
 });
 
 test('from euro to dolar', () => {
-    let total = fromEuroToDollar(1);
+    let total = fromEuroToDollar(3);
+    const expected = 3 * 1.2;
 
-    expect(total).toBe(1.2);
+    expect(total).toBe(expected);
 });
 
 test('from tan to pound', () => {
